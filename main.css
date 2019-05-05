@@ -1,0 +1,75 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato"); 
+
+
+.hero-banner {
+    background: url(images/hero-waterfall-bg.png),
+      url(images/hero-space-bg.png), url(images/hero-pillars-bg.png),
+      url(images/hero-main-bg.png);
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -99999;
+    animation: parallax_bg linear 40s infinite;
+  }
+  
+  
+  
+  @keyframes parallax_bg {
+    100% {
+      background-position-y: -1200px, 1000px, 300px, 0px;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .hero-banner {
+  display: none;
+    }
+  }
+
+
+  h1 { 
+    font-size:26px;
+    padding-left: 10px; 
+    padding-top: 10px; 
+    font-family: 'Lato';
+    color: white; 
+  }
+  h2 { 
+    font-size:12px;
+    padding-left: 10px; 
+    padding-top: 0px; 
+    font-family: 'Lato';
+    color: white; 
+    font-weight: 100;
+  }
+
+  a { 
+    color: white;
+    text-decoration: none;
+  }
+  a:hover { 
+    color: #dcdcdc;
+  }
+  a:active { 
+    color: #666;
+  }
+
+  a:visited { 
+    color: white;
+  }
+
+  .wrapper-row-icons {
+    padding-top: 4px;
+    padding-left: 10px;
+  }
+
+  .sm-icons { 
+height: 20px;
+  }
